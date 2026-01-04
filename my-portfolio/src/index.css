@@ -1,0 +1,181 @@
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.project-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+.project-slide {
+  height: 80vh;
+  position: relative;
+}
+.project-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  max-width: 500px;
+}
+.project-overlay h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.project-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+/* Custom arrows */
+.custom-control {
+  width: 60px;
+}
+.custom-control i {
+  font-size: 3rem;
+  color: white;
+  transition: transform 0.2s ease;
+}
+.custom-control:hover i {
+  transform: scale(1.2);
+}
+
+.navbar .bi {
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar .nav-link:hover .bi {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+/* ===== GLOBAL ===== */
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Section titles */
+section h2 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3b82f6;
+}
+
+/* Accent underline */
+.section-accent::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(2, 6, 23, 0.8) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 4px;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+#about {
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+#about h1, #about h5 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #3b82f6;
+}
+
+#about h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #60a5fa;
+  margin-bottom: 1.5rem;
+}
+
+#about p, #about li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.profile-img {
+  border: 4px solid #3b82f6;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
+}
+
+#contact {
+  background: linear-gradient(180deg, #020617, #020617);
+}
+
+.contact-card {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.form-control {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border: none;
+  font-weight: 600;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
