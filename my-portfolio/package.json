@@ -1,11 +1,14 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://pOLyWh1rL.github.io/my-portfolio/",
+  "homepage": "https://pOLyWh1rL.github.io/Online-Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "gh-pages": "^6.3.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "vite": "^7.3.0"
   },
   "scripts": {
@@ -14,5 +17,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2"
   }
 }
