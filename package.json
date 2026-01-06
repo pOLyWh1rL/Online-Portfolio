@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.8"
-  }
+    "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://polywh1rl.github.io/my-portfolio/"
 }
