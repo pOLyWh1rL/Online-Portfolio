@@ -19,14 +19,14 @@ function Contact() {
 
     emailjs
       .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        'service_ahh6dph',
+        'template_a6odk8b',
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        'ca1niCcoPCUug5mV0'
       )
       .then(
         () => {
