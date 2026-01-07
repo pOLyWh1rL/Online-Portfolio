@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Logo from '../assets/Navbar-Logo.png';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +17,10 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
 
       <div className="container">
-        <a className="navbar-brand" href="./">pOLy</a>
+        <a className="navbar-brand d-flex align-items-center" href="/">
+          <img src={Logo} alt="Logo" className="navbar-logo me-2" />
+          <span>pOLy</span>
+        </a>
 
         <button
           className="navbar-toggler"

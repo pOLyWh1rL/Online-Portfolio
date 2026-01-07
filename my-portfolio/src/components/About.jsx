@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="fade-up">
       <section id="about">
-        <div className="container py-5">
+        <div className="container">
 
           <div className="row mb-5">
             {/* Profile Picture + Name */}
@@ -23,12 +23,13 @@ function About() {
               <h1 className="fw-bold mb-3">Hello 👋</h1>
 
               <p className="lead">
-                I’m <strong>June Benedict Malabanan</strong>, a Computer Science
+                I’m <strong>June Benedict Malabanan</strong>, a 2nd year Computer Science
                 student from <strong>Asia Pacific College</strong> who aspires to
                 become a successful individual in the field of technology.
               </p>
 
               <h5 className="mt-4">Hobbies</h5>
+              <p>In my free time, I enjoy:</p>
               <ul className="list-unstyled">
                 <li>🎯 Learning something new</li>
                 <li>🎮 Playing video games</li>

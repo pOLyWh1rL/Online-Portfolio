@@ -1,11 +1,7 @@
 function EducationExperience() {
   return (
-    <section id="education-experience" className="py-5">
+    <section id="education-experience">
       <div className="container">
-
-        <h2 className="text-center mb-5 section-title">
-          Education & Experience
-        </h2>
 
         <div className="row g-4">
 

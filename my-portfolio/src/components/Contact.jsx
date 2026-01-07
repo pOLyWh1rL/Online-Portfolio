@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import SectionHeader from './SectionHeader';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -24,8 +23,9 @@ function Contact() {
   return (
     <div className="fade-up">
       <section id="contact" className="contact-section">
-        <SectionHeader title="Contact Me" />
         <div className="container">
+          
+          <h2 className="text-center mb-5 section-accent">Contact Me</h2>
 
           {submitted && (
             <div className="alert alert-success text-center" role="alert">

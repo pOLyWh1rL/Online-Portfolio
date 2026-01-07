@@ -1,7 +1,6 @@
 import dotaImg from '../assets/projects/dota.png';
 import pharmasearch from '../assets/projects/PharmaSearch.png';
 import game from '../assets/projects/Game.png';
-import SectionHeader from './SectionHeader';
 
 const projects = [
   {
@@ -33,9 +32,9 @@ const projects = [
 function Projects() {
   return (
       <div className="fade-up">
-      <section id="projects" className="py-5 bg-dark text-light">
-        <SectionHeader title="Projects" />
+      <section id="projects" className="text-light">
         <div className="container-fluid px-0">
+          <h2 className="text-center mb-5 section-accent">Projects</h2>
 
           <div
             id="projectsCarousel"
