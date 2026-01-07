@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "gh-pages": "^6.3.0",

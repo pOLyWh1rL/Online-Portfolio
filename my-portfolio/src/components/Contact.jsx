@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,9 +16,28 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // For now, log the data
-    setSubmitted(true);
-    setFormData({ name: '', email: '', message: '' }); // reset form
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          console.error('EmailJS Error:', error);
+          alert('Failed to send message. Please try again.');
+        }
+      );
   };
 
   return (
