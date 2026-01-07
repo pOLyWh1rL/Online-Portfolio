@@ -17,7 +17,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
 
       <div className="container">
-        <a className="navbar-brand d-flex align-items-center" href="location.reload()">
+        <a className="navbar-brand d-flex align-items-center" href="https://polywh1rl.github.io/Online-Portfolio/">
           <img src={Logo} alt="Logo" className="navbar-logo me-2" />
           <span>pOLy</span>
         </a>
